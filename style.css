@@ -1,0 +1,572 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.playlist{
+    background-color: #030303;
+}
+.sidebar{
+    width: 350px;
+    background-color: #030303;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 10px;
+}
+.sidebar-nav{
+    background-color: #151414;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin: 10px;
+}
+.sidebar-nav .logo{
+   width:120px;
+}
+.sidebar-nav .logo img{
+    width: 100%;
+}
+.sidebar-nav ul{
+    list-style: none;
+}
+.sidebar-nav ul li {
+    padding: 10px 20px;
+}
+.sidebar-nav ul li a:hover{
+    color: white;
+}
+
+.sidebar-nav ul li a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 16px;
+    font-weight: 600;
+}
+.sidebar-nav ul li a i{
+   font-size: 20px;
+   margin-right: 20px;
+}
+.library::after{
+    content: '+';
+    float: right;
+    text-align: center;
+    background: #1f1e1e;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+.create-playlist{
+    background-color: #302f2f;
+    padding: 30px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.sidebar-scroll{
+    height: 120px;
+    overflow-y: auto;
+}
+.sidebar-scroll::-webkit-scrollbar{
+    background: transparent;
+   
+}
+.sidebar-scroll::-webkit-scrollbar-thumb{
+    background: transparent;
+    width: 3px;
+}
+.sidebar-scroll:hover::-webkit-scrollbar-thumb{
+    background: #5c5b5b;
+    width: 3px;
+    border-radius: 10px;
+}
+.create-playlist h4{
+    color: white;
+    font-size: 15px;
+}
+.create-playlist p{
+    color: white;
+    font-size: 12px;
+    margin: 12px 0;
+}
+.create-playlist button{
+    padding: 8px 15px;
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    border-radius: 20px;
+}
+.legal ul li a{
+text-decoration: none;
+color: #575656;
+font-size: 11px;
+font-weight: 600;
+margin: 0 6px;
+}
+.legal ul li a:hover{
+    text-decoration: underline;
+    color: #bebcbc;
+}
+.legal ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.legal ul li{
+    padding-bottom: 0 12px;
+    padding-bottom: 8px;
+}
+.eng-button{
+    padding: 20px 30px;
+}
+.eng-button button{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    border: 1px solid rgb(189, 186, 186);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+    font-weight: 600;
+}
+.eng-button button i{
+    margin-right: 5px;
+    
+    
+}
+    .eng-button button:hover{
+        padding: 11px 31px;
+        border :1px solid rgb(252, 251, 251);
+    }
+    .main{
+        margin-left: 350px;
+        background-color: #181818;
+        height: 2000px;
+        margin-bottom: 80px;
+       
+    }
+.main .topnav{
+    padding: 20px 30px;
+    background-color: #131313;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main .topnav button {
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+.main .topnav .arrow button i {
+   color: rgb(151, 148, 148);
+   font: 22px;
+   margin-right: 20px;
+}
+.topnav .login .signup{
+    color:rgb(139, 137, 137) ;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 25px;
+}
+.topnav .login .signup:hover{
+    color: white;
+}
+.topnav .login .login-btn {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+.topnav .login .login-btn:hover {
+    background-color: rgb(226, 222, 222);
+    font-weight: 700;
+}
+
+.playlist h2 {
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.playlist h2:hover {
+    text-decoration: underline;
+}
+
+.playlist p {
+    font-weight: 200;
+    color: rgb(119, 114, 114);
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.playlist p:hover {
+    text-decoration: underline;
+}
+
+.popular-artist img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.popular-artist .col {
+    margin-top: 20px;
+}
+
+.artist h4 {
+    color: white;
+    font-weight: 600;
+    /* Adjust font weight */
+    font-size: 16px;
+    /* Adjust font size */
+    margin-bottom: 8px;
+    /* Adjust margin as needed */
+}
+
+.artist p {
+    color: rgb(170, 170, 170);
+    /* Adjust text color */
+    font-size: 14px;
+    /* Adjust font size */
+    margin-bottom: 0;
+    /* Remove margin bottom to reduce extra space */
+}
+.artist {
+    background-color: rgb(17, 17, 17);
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 15px;
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+.artist:hover {
+    background: linear-gradient(to bottom, rgb(7, 7, 7), rgb(43, 42, 42));
+}
+
+.artist .play-btn {
+    position: absolute;
+        top: 120px;
+            /* Center vertically */
+            left: 125px;
+            /* Center horizontally */
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.artist .play-btn i {
+    background-color: rgb(100, 196, 100);
+    border-radius: 50%;
+    padding: 14px;
+}
+
+.artist:hover .play-btn {
+    opacity: 1;
+}
+
+.playlist h4 {
+    color: white;
+}
+
+
+/* Custom styles */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p1 p {
+    color: rgb(149, 143, 143);
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.radio {
+    background-color: rgb(17, 17, 17);
+    border-radius: 6px;
+    padding: 15px;
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+.radio img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+.play-btn3 {
+    position: absolute;
+        bottom: 210px;
+            margin-left: 0px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.radio:hover {
+    background: linear-gradient(to bottom, rgb(7, 7, 7), rgb(43, 42, 42));
+}
+
+.radio:hover .play-btn3 {
+    opacity: 1;
+}
+
+
+.radio {
+    width: 160px;
+    min-width: 160px;
+    background-color: rgb(17, 17, 17);
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.radio img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.radio:hover {
+    background: linear-gradient(to bottom, rgb(7, 7, 7), rgb(43, 42, 42));
+}
+
+.radio .play-btn3 i {
+    position: absolute;
+    background-color: rgb(100, 196, 100);
+    border-radius: 50%;
+    padding: 15px;
+    bottom: -120px;
+    margin-left: 90px;
+    opacity:0 ;
+}
+.radio:hover .play-btn3 i {
+    opacity: 1;
+}
+
+
+.charts {
+    flex: 1 1 calc(16.666% - 20px);
+    background-color: #101010;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.charts img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.charts h4 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.charts p {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.charts:hover {
+    background: linear-gradient(to bottom, rgb(7, 7, 7), rgb(43, 42, 42));
+}
+
+.play-btn4 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+   
+    transform: translate(-50%, -50%);
+    background-color: rgba(100, 196, 100);
+    border-radius: 50%;
+    padding: 10px 10px;
+    opacity: 0;
+   
+}
+
+.charts:hover .play-btn4 {
+    opacity: 1;
+}
+
+
+ .spotify {
+    width: 160px;
+    min-width: 160px;
+    background-color: rgb(17, 17, 17);
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.spotify img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.spotify:hover {
+    background: linear-gradient(to bottom, rgb(7, 7, 7), rgb(43, 42, 42));
+}
+
+.spotify .play-btn5 i {
+    position: absolute;
+    background-color: rgb(100, 196, 100);
+    border-radius: 50%;
+    padding: 15px;
+   top: 40%;
+   left: 70%;
+    opacity: 0;
+
+}
+
+.spotify:hover .play-btn5 i {
+    opacity: 1;
+}
+
+
+ .episodes {
+    width: 160px;
+    min-width: 160px;
+    background-color: rgb(17, 17, 17);
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.episodes img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.episodes:hover {
+    background: linear-gradient(to bottom, rgb(7, 7, 7), rgb(43, 42, 42));
+}
+
+.episodes .play-btn6 i {
+    position: absolute;
+    background-color: rgb(100, 196, 100);
+    border-radius: 50%;
+    padding: 15px;
+   top: 40%;
+   left: 60%;
+    opacity: 0;
+
+}
+.episodes h4,
+.radio h4,
+.charts h4,
+.spotify h4 {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.episodes p,
+.radio p,
+.charts p,
+.spotify p {
+    color: #d2d1d1;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.episodes:hover .play-btn6 i {
+    opacity: 1;
+}
+footer h5{
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+}
+footer a.text-body{
+    color: rgb(153, 150, 150) !important ;
+   
+    
+}
+footer .container{
+    position: relative;
+    right: 12%;
+    margin-top: 50px;
+}
+footer .row{
+  margin: 100px;
+text-align:start !important;
+
+}
+footer a.text-body:hover{
+    color: white !important;
+}
+
+.col-lg-2 .d-flex   a {
+    position: relative;
+    left: 200px;
+    margin-left: 20px;
+    font-size: 23px;
+    background-color: rgb(42, 41, 41);
+    color: white !important;
+    border-radius: 100%;
+   
+    
+    
+}
+.col-lg-2 .d-flex a:hover{
+    background-color: rgb(115, 115, 115);
+}
+.preview{
+    display: flex;
+    justify-content: space-between;
+    background:linear-gradient(to right,#ae2896,#509bf5);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 5px 20px;
+    height: 50px;
+}
+.preview h4{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: white;
+}
+.preview p{
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+}
+
+.preview button{
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    padding: 8px 30px;
+    font-weight: 700;
+}
+hr{
+    color: white;
+  background-color: rgb(70, 70, 70);
+    margin: 20px 40px;
+    border: 0;
+    outline: 0;
+}
+.copyright{
+    padding: 100px 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+}

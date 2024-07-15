@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="icon" type="image/png" href="./images/spotify.svg">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="container-fluid">
+            <div class="sidebar-nav">
+                <div class="logo">
+                    <a href=""><img src="./images/logo-new.png" alt=""></a>
+                </div>
+    
+                <ul>
+                    <li><a href="">
+                            <span><i class="fa-solid fa-house"></i></span>
+                            <span>HOME</span>
+                        </a></li>
+                    <li><a href="">
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <span>SEARCH</span>
+                        </a></li>
+                </ul>
+            </div>
+    
+            <div class="sidebar-nav box2">
+                <ul>
+                    <li><a href="">
+                            <span><i class="fa-solid fa-book"></i></span>
+                            <span class="library">YOUR LIBRARY</span>
+                        </a></li>
+                    <li>
+                        <div class="sidebar-scroll">
+                            <div class="create-playlist">
+                                <h4>Create your first playlist</h4>
+                                <p>It's easy, we'll help you</p>
+                                <button>Create Playlist</button>
+                            </div>
+    
+                            <div class="create-playlist">
+                                <h4>Let's find some podcasts to follow</h4>
+                                <p>We'll keep you updated on new episodes</p>
+                                <button>Browse</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+    
+                <div class="legal">
+                    <ul>
+                        <li>
+                            <a href="">Legal</a>
+                            <a href="">Safety & Privacy</a>
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Cookies</a>
+                            <a href="">About Ads</a>
+                            <a href="">Accessibility</a>
+                        </li>
+                        <li>
+                            <a href="">Cookies</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="eng-button">
+                    <button><i class="fa-solid fa-globe"></i>English</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- main -->
+<div class="main">
+    <div class="topnav d-flex justify-content-between align-items-center">
+        <div class="arrow">
+            <button class="btn btn-outline-primary"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="btn btn-outline-primary"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div class="login">
+            <button class="btn btn-outline-primary signup">Sign up</button>
+            <button class="btn btn-outline-primary login-btn">Log in</button>
+        </div>
+    </div>
+
+
+        
+        <div class="playlist">
+            <div class="popular-artist">
+                <div class="header d-flex justify-content-between align-items-center">
+                    <h2>Popular Artist</h2>
+                    <div class="p1">
+                        <p>show all</p>
+                    </div>
+                </div>
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4">
+                    <div class="col-lg-2 col-md-4">
+                        <div class="artist">
+                            <img src="./images/ab6761610000e5ebcb6926f44f620555ba444fca.jpg" alt="pritam" class="img-fluid">
+                            <div class="play-btn">
+                                <span><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <h4>Pritam</h4>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <div class="artist">
+                            <img src="./images/ajs.jpg" alt="arijith" class="img-fluid">
+                            <div class="play-btn">
+                                <span><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <h4>Arijit Singh</h4>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <div class="artist">
+                            <img src="./images/4df9740f3f6bfcc28e9c8c57ecf4c7eda4a2e42b.jpg" alt="ar rahman" class="img-fluid">
+                            <div class="play-btn">
+                                <span><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <h4>A.R. Rahman</h4>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <div class="artist">
+                            <img src="./images/ab6761610000e5eba038d7d87f8577bbb9686bd3.jpg" alt="sachin" class="img-fluid">
+                            <div class="play-btn">
+                                <span><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <h4>Sachin-Jigar</h4>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <div class="artist">
+                            <img src="./images/ani.jpg" alt="ani" class="img-fluid">
+                            <div class="play-btn">
+                                <span><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <h5 style="color: white; font-weight: 900; font-size: 13px;">Anirudh Ravichander</h5>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <div class="artist">
+                            <img src="./images/vishal_mishra.webp" alt="vishal" class="img-fluid">
+                            <div class="play-btn">
+                                <span><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <h4>Vishal Mishra</h4>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="playlist">
+        <div class="header d-flex justify-content-between align-items-center">
+            <h2>Popular radio</h2>
+            <div class="p1">
+                <p>show all</p>
+            </div>
+        </div>
+       
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4">
+                    <div class="col">
+            <div class="radio">
+                <img src="./images/r1" alt="">
+                <div class="play-btn3">
+                    <span><i class="fa-solid fa-play"></i></span>
+                </div>
+                <h4>Eka Tha Raja</h4>
+                <p>Badshah</p>
+                </div>
+            </div>
+            <div class="col">
+            <div class="radio">
+                <img src="./images/r2" alt="">
+                <div class="play-btn3">
+                    <span><i class="fa-solid fa-play"></i></span>
+                </div>
+                <h4>Aashiqui 2</h4>
+                <p>Mithoon,Ankit Tiwari,Jeet Gannguli</p>
+            </div>
+            </div>
+            <div class="col">
+            <div class="radio">
+                <img src="./images/r3" alt="">
+                <div class="play-btn3">
+                    <span><i class="fa-solid fa-play"></i></span>
+                </div>
+                <h4>ANIMAL</h4>
+                <p>Manan Bhardwaj,Vishal</p>
+            </div>
+            </div>
+            <div class="col">
+            <div class="radio">
+                <img src="./images/r4" alt="">
+                <div class="play-btn3">
+                    <span><i class="fa-solid fa-play"></i></span>
+                </div>
+                <h4>Sajni</h4>
+                <p>Ram Sampath,Arijit Singh</p>
+            </div>
+            </div>
+            <div class="col">
+            <div class="radio">
+                <img src="./images/r5" alt="">
+                <div class="play-btn3">
+                    <span><i class="fa-solid fa-play"></i></span>
+                </div>
+                <h4>Moosetape</h4>
+                <p>Sidhu Moosa Wala</p>
+            </div>
+            </div>
+            <div class="col">
+            <div class="radio">
+                <img src="./images/r6" alt="">
+                <div class="play-btn3">
+                    <span><i class="fa-solid fa-play"></i></span>
+                </div>
+                <h4>Still Rollin</h4>
+                <p>Shubh</p>
+            </div>
+            </div>
+            </div>
+        </div>
+    <div class="playlist">
+        <div class="header d-flex justify-content-between align-items-center">
+            <h2>Featured Charts</h2>
+            <div class="p1">
+                <p>show all</p>
+            </div>
+        </div>
+    
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4 album3">
+            <div class="col">
+                <div class="charts">
+                    <img src="./images/c1.jpg" alt="">
+                    <div class="play-btn4">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h4>Top Songs -Global</h4>
+                    <p>Your daily update of the most played tracks...</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="charts">
+                    <img src="./images/c2.jpg" alt="">
+                    <div class="play-btn4">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h4>Top Songs-USA</h4>
+                    <p>Your daily update of the most played tracks...</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="charts">
+                    <img src="./images/c3.jpg" alt="">
+                    <div class="play-btn4">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h4>Top 50-Global</h4>
+                    <p>Your daily update of the most played tracks... </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="charts">
+                    <img src="./images/c5.jpg" alt="">
+                    <div class="play-btn4">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h4>Top 50-USA</h4>
+                    <p>Your daily update of the most played tracks...</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="charts">
+                    <img src="./images/c6.jpg" alt="">
+                    <div class="play-btn4">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h4>Viral 50-Global</h4>
+                    <p>Your daily update of the most viral tracks...</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="charts">
+                    <img src="./images/cu.jpg" alt="">
+                    <div class="play-btn4">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h4>viral 50-USA</h4>
+                    <p>Your daily update of the most viral tracks...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                <div class="playlist">
+                    <div class="header d-flex justify-content-between align-items-center">
+                        <h2>Spotify Playlists</h2>
+                        <div class="p1">
+                            <p>show all</p>
+                        </div>
+                    </div>
+                
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4 album4">
+                        <div class="col">
+                            <div class="spotify">
+                                <img src="./images/play1.jpg" alt="">
+                                <div class="play-btn5">
+                                    <span><i class="fa-solid fa-play"></i></span>
+                                </div>
+                                <h4>Today's Top Hits</h4>
+                                <p>Karol G is on top of the..</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="spotify">
+                                <img src="./images/play2.jpg" alt="">
+                                <div class="play-btn5">
+                                    <span><i class="fa-solid fa-play"></i></span>
+                                </div>
+                                <h4>phonk</h4>
+                                <p>The best of your drift</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="spotify">
+                                <img src="./images/play3.jpg" alt="">
+                                <div class="play-btn5">
+                                    <span><i class="fa-solid fa-play"></i></span>
+                                </div>
+                                <h4>RapCaviar</h4>
+                                <p>Eminem,Ice Spice..</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="spotify">
+                                <img src="./images/paly4.jpg" alt="">
+                                <div class="play-btn5">
+                                    <span><i class="fa-solid fa-play"></i></span>
+                                </div>
+                                <h4>RNB X</h4>
+                                <p>Where R&B lives</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="spotify">
+                                <img src="./images/play5.jpg" alt="">
+                                <div class="play-btn5">
+                                    <span><i class="fa-solid fa-play"></i></span>
+                                </div>
+                                <h4>Viva Latino</h4>
+                                <p>Today's top Latin hits</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="spotify">
+                                <img src="./images/play6.jpg" alt="">
+                                <div class="play-btn5">
+                                    <span><i class="fa-solid fa-play"></i></span>
+                                </div>
+                                <h4>Viral Hits</h4>
+                                <p>Viral,trending.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                        
+                    <div class="playlist">
+                        <div class="header d-flex justify-content-between align-items-center">
+                            <h2>Trending Episodes</h2>
+                            <div class="p1">
+                                <p>show all</p>
+                            </div>
+                     
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4 album4">
+                        <div class="col">
+                            <div class="episodes">
+                                <img  src="./images/epi1.jpg" alt="">
+                                <div class="play-btn6">
+                                    <span><i class="fa-solid fa-play"></i></span>
+                                </div>
+                                <h4>Welcome back</h4>
+                                <p>June 2021 .15min</p>
+                            </div>
+                            </div>
+                            <div class="col">
+                            <div class="episodes">
+                                <img src="./images/epi2.jpg" alt="">
+                                <div class="play-btn6">
+                                    <span><i class="fa-solid fa-play"></i></span>
+                                </div>
+                                <h4>#73:Hotel of...</h4>
+                                <p>June 2021 .93min</p>
+                            </div>
+                            </div>
+                            <div class="col">
+                            <div class="episodes">
+                                <img src="./images/epi3.jpg" alt="">
+                                <div class="play-btn6">
+                                    <span><i class="fa-solid fa-play"></i></span>
+                                </div>
+                                <h4>Anubis:God of...</h4>
+                                <p>June 2021 .93min</p>
+                            </div>
+                            </div>
+                            <div class="col">
+                            <div class="episodes">
+                                <img src="./images/ep4.jpg" alt="">
+                                <div class="play-btn6">
+                                    <span><i class="fa-solid fa-play"></i></span>
+                                </div>
+                                <h4>Anubis:God of...</h4>
+                                <p>June 2021 .13min</p>
+                            </div>
+                            </div>
+                            <div class="col">
+                            <div class="episodes">
+                                <img src="./images/ep5.jpg" alt="">
+                                <div class="play-btn6">
+                                    <span><i class="fa-solid fa-play"></i></span>
+                                </div>
+                                <h4>Mahabharath...</h4>
+                                <p>Apr 2014 .24min</p>
+                            </div>
+                            </div>
+                            <div class="col">
+                            <div class="episodes">
+                                <img height="130px" src="./images/ep6.jpg" alt="">
+                                <div class="play-btn6">
+                                    <span><i class="fa-solid fa-play"></i></span>
+                                </div>
+                                <h4>Relaxing Rain..</h4>
+                                <p>Aug  2019 .122min</p>
+                            </div>
+                            </div>
+                        </div>
+                
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#!" class="text-body">About</a></li>
+                        <li><a href="#!" class="text-body">Jobs</a></li>
+                        <li><a href="#!" class="text-body">For the Record</a></li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-0">Community</h5>
+                    <ul class="list-unstyled p-2">
+                        <li><a href="#!" class="text-body">For Artists</a></li>
+                        <li><a href="#!" class="text-body">Developers</a></li>
+                        <li><a href="#!" class="text-body">Advertising</a></li>
+                        <li><a href="#!" class="text-body">Vendors</a></li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Useful links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#!" class="text-body">Support</a></li>
+                        <li><a href="#!" class="text-body">Free Mobile App</a></li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+    
+               
+    
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    
+                        <h5 class="text-uppercase mb-0">Spotify plans</h5>
+                        
+                    <ul class="list-unstyled ">
+                        <li><a href="#!" class="text-body ">Premium Individuals</a></li>
+                        <li><a href="#!" class="text-body">Premium Duo</a></li>
+                        <li><a href="#!" class="text-body">Premium Family</a></li>
+
+                        <li><a href="#!" class="text-body">Spotify Free</a></li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    
+                <div class="d-flex ms-3">
+                    <a href="#!" class="text-body me-3 p-2 "><i class="fab fa-instagram"></i></a>
+                    <a href="#!" class="text-body me-3 p-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#!" class="text-body p-2"><i class="fab fa-facebook"></i></a>
+                  
+                </div>
+            
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+           
+            </div>
+          
+        </div>
+        <!-- Grid container -->
+   
+        
+       
+    </footer>
+<div>
+<hr>
+    <p class="copyright" >@2024 Spotify AB</p>
+</div>
+    </div>
+
+    <div class="container">
+        <div class="preview">
+            <div class="content">
+                <h4>Preview of Spotify</h4>
+                <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+            </div>
+            <div class="button">
+            <button>Sign Up Free</button>
+             </div>
+        </div>
+    </div>
+</body>
+</html>
